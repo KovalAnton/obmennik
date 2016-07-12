@@ -25,13 +25,17 @@
 	<style></style>
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
-	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+	<!-- <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script> -->
 
 	<!-- Load CSS Start -->
 	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
 	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
 	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
 	<!-- Load CSS End -->
+
+
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
 
 	<!-- Load CSS Compiled without JS -->
 	<noscript>
@@ -85,7 +89,278 @@
 			</ul>
 		</div> <!-- end bottom_navigation -->
 	</header>
-</div>
+	<div class="content">
+				<div class="left_content col-md-9 col-sm-8 col-xs-12">
+					<div class="top_content_line"></div> <!-- end top_content_line -->
+					<div class="news_list top_news_list">
+						<marquee height="100" onmouseout="this.start()" onmouseover="this.stop()" scrolldelay="20" scrollamount="1" direction="up">
+							<div style="margin-bottom: 15px">
+								<a style="color: inherit; text-decoration: none" href="news.html?iID=1">
+									<font color="#048dcb">31.08.2015</font>
+									<br>
+									<b>Купить WM, Qiwi, Яндекс Деньги и Сбербанк RUR без 2% комиссии Привата.</b>
+									<br>
+									Купить WM, Qiwi, Яндекс Деньги и Сбербанк RUR без 2% комиссии Привата.
+								</a>
+							</div>
+						</marquee>
+					</div> <!-- end news_list -->
+					<span>НАПРАВЛЕНИЯ ОБМЕНА</span>
+					<table id="ExchangeTable">
+						<thead>
+							<tr>
+								<th><i class="fa fa-angle-down"></i>Отдаете</th>
+								<th><i class="fa fa-angle-up"></i>Получаете</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="FromCurrencies">
+									<ul>
+										<li class="active" data-currency="WMZ">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/WMZ.png">
+														</td>
+														<td>WMZ</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li data-currency="WMR">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/wmr.png">
+														</td>
+														<td>WMR</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li data-currency="WMU">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/WMU.png">
+														</td>
+														<td>WMU</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li data-currency="YAM">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/yandex.png">
+														</td>
+														<td>Яндекс.Деньги</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li data-currency="QWRUB">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/qiwi.png">
+														</td>
+														<td>Qiwi RUB</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li data-currency="SBERRUB">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/sberbank.png">
+														</td>
+														<td>СберБанк RUB</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li data-currency="PRIVAT24UAH">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/privat.png">
+														</td>
+														<td>Приват24 UAH</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+									</ul>
+								</td>
+								<td class="ToCurrencies" valign="top">
+									<ul>
+										<li onclick="window.location = '?sFromCurrency=WMZ&sToCurrency=WMR'">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/wmr.png">
+														</td>
+														<td>WMR</td>
+														<td align="right">
+															<button>обменять</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li onclick="window.location = '?sFromCurrency=WMZ&sToCurrency=WMU'">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/WMU.png">
+														</td>
+														<td>WMU</td>
+														<td align="right">
+															<button>обменять</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li onclick="window.location = '?sFromCurrency=WMZ&sToCurrency=YAM'">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/yandex.png">
+														</td>
+														<td>Яндекс.Деньги</td>
+														<td align="right">
+															<button>обменять</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li onclick="window.location = '?sFromCurrency=WMZ&sToCurrency=QWRUB'">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/qiwi.png">
+														</td>
+														<td>Qiwi RUB</td>
+														<td align="right">
+															<button>обменять</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li onclick="window.location = '?sFromCurrency=WMZ&sToCurrency=SBERRUB'">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/sberbank.png">
+														</td>
+														<td>СберБанк RUB</td>
+														<td align="right">
+															<button>обменять</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li onclick="window.location = '?sFromCurrency=WMZ&sToCurrency=PRIVAT24UAH'">
+											<table class="money_table">
+												<tbody>
+													<tr>
+														<td>
+															<img alt="" src="img/privat.png">
+														</td>
+														<td>Приват24 UAH</td>
+														<td align="right">
+															<button>обменять</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="rezerves_lost">
+						<span>ОПОВЕЩЕНИЕ О РЕЗЕРВАХ</span>
+						<p>Если в обменнике не хватает резерва по выбранному Вами направлению обмена, подпишитесь. При пополнении резерва, Вы получите уведомление на e-mail.</p>
+						<form method="post" action="index.php?p=subscribe-reserves&bAjax" name="SubscribeReserves">
+							<input type="hidden" value="subscribe" name="sMod">
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<label for="sEmail">E-mail:</label>
+										</td>
+										<td colspan="2">
+											<input id="sEmail" type="text" autocomplete="off" style="width: 100%" required="required" value="" maxlength="129" name="sEmail">
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="dAmount">Сумма:</label>
+										</td>
+										<td>
+											<input id="dAmount" class="decimal" type="text" required="required" autocomplete="off" value="" maxlength="11" size="5" style="text-align: center; float: left;" name="dAmount">
+										</td>
+										<td>
+											<div class="select">
+												<select required="required" name="sCurrency">
+													<option class="WMZ" value="WMZ">WMZ</option>
+													<option class="WMR" value="WMR">WMR</option>
+													<option class="WMU" value="WMU">WMU</option>
+													<option class="YAM" value="YAM">Яндекс.Деньги</option>
+													<option class="QWRUB" value="QWRUB">Qiwi RUB</option>
+													<option class="SBERRUB" value="SBERRUB">СберБанк RUB</option>
+													<option class="PRIVAT24UAH" value="PRIVAT24UAH">Приват24 UAH</option>
+												</select>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="3">
+											<button>Подписаться</button>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</form>
+					</div> <!-- end rezerves_lost -->
+				</div>
+				<div class="right_content col-md-3 col-sm-4 col-xs-12">
+
+				</div> <!-- end content -->
+
+			</div> <!-- end content -->
+	</div> <!-- end container -->
 
 
 	<div class="hidden"></div>

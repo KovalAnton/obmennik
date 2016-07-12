@@ -1,0 +1,223 @@
+@import "bourbon";
+@import "vars.sass";
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass";
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+
+}
+body input:required:valid,
+body textarea:required:valid {
+
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 500px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+	background-color: #EAE2E0;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+//content
+
+.bottom_navigation ul {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to left,#04488B,#46C6EF);
+}
+
+.bottom_navigation li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 5px 10px;
+
+}
+
+.bottom_navigation li:hover {
+	background-color: #04488B;
+}
+
+.bottom_navigation a {
+	color: white;
+}
+
+									/*CONTENT*/
+
+/*
+.top_content_line {
+	height: 35px;
+	background-color: #46C6EF;
+	border-bottom: 1px solid #04488B;
+}*/
+
+.content {
+	margin-top: 15px;
+}
+									/*left content*/
+
+.news_list {
+	width: 80%;
+	margin: 25px auto;
+	border-bottom: 2px solid #04488B;
+	/*background: linear-gradient(to top, rgba(70, 198, 239, 0.3),  #EDEDED);
+	background: -o- linear-gradient(to top, rgba(70, 198, 239, 0.3),  #EDEDED);
+	background: -moz- linear-gradient(to top, rgba(70, 198, 239, 0.3),  #EDEDED);
+	background: -webkit- linear-gradient(to top, rgba(70, 198, 239, 0.3),  #EDEDED);*/
+}
+
+.left_content {
+	/*background-color: #EDEDED;*/
+	padding: 0;
+}
+
+.left_content h2 {
+	font-size: 20px;
+	margin: 10px 0 0 15px;
+}
+
+.left_content p {
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.left_content span {
+	margin-left: 20px;
+	font-size: 20px;
+	color: #46C6EF;
+}
+
+.left_content table{
+	width: 100%;
+}
+
+
+.left_content table th {
+	text-align: left;
+	font-size: 18px;
+}
+
+.left_content table th i {
+	font-size: 25px;
+	color: green;
+	margin-right: 5px;
+}
+
+.left_content table ul {
+	margin: 0;
+	padding: 0;
+}
+
+.left_content table td {
+	width: 50%;
+}
+
+.left_content table li {
+	list-style-type: none;
+	width: 99%;
+	font-size: 20px;
+	height: 80px;
+	font-weight: bold;
+	background: linear-gradient(to left, #04488B,#46C6EF);
+  transition: background 0.2s ease-out;
+  background-size: cover;
+  border: 1px solid #04488B;
+
+	/*background: linear-gradient(to right, #46C6EF, #04488B);*/
+	margin-top: 5px;
+	cursor: pointer;
+	padding-top: 18px;
+}
+
+.left_content table li:hover {
+	background-position: -20px;
+	/*background-color: linear-gradient(to left, #46C6EF, #04488B);*/
+}
+
+.left_content table img {
+	width: 40px;
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
+.left_content table button {
+	font-size: 18px;
+	color: white;
+	background-color: transparent;
+	border: none;
+	margin-right: 15px;
+}
+
+.money_table tr td:first-child {
+	width: 100px;
+}
+
+/*.otzivy {
+	margin: 25px auto;
+	width: 115px;
+	text-align: center;
+	border: 2px solid #04488B;
+}
+
+.otzivy a {
+	font-size: 18px;
+}
+
+.otzivy:hover {
+	background: rgba(4, 72, 139, 0.3);
+}*/
+
+form[name="SubscribeReserves"] {
+	width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.rezerves_lost {
+	margin-top: 50px;
+}
+
+.rezerves_lost form button {
+	margin-top: 20px;
+	border: 2px solid #04488B;
+	color: #04488B;
+	text-align: right;
+}
+
+.rezerves_lost form button:hover {
+	background: rgba(4, 72, 139, 0.3);
+}
+
+
+//ALWAYS END
+@import "media"
