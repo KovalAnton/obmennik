@@ -49,6 +49,19 @@ body {
 	-webkit-background-size: 100%;
 	background-size: 100%;
 }
+
+.bottom_bg {
+	background-image: url(../img/bg_bottom.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: 0px;
+	z-index: -50;
+	width: 100%;
+	height: 400px;
+}
+
 //content
 
 .bottom_navigation ul {
