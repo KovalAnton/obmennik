@@ -366,6 +366,94 @@ footer {
 	border-right: none;
 }
 
+.mobile_navigation {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	display: none;
+}
+
+.mobile_navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-top: 90px;
+}
+
+.mobile_navigation ul li {
+	padding: 10px 0;
+	margin: 5px 0;
+	background-color: rgba(4, 72, 139, 0.8);
+}
+
+.mobile_navigation ul li:last-child {
+	background-color: rgba(245, 123, 32, 0.8);
+}
+
+
+.mobile_navigation ul li:hover {
+	margin-left: -15px;
+}
+
+.mobile_navigation ul a {
+	color: white;
+}
+
+.menu-3 {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: rgba(4, 72, 139, 0.6);
+  transition: all 0.3s;
+}
+
+.menu-3:before,
+.menu-3:after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.menu-3:hover {
+  background-color: orange;
+}
+.menu-3:before, .menu-3:after {
+  background-color: #212121;
+  height: 4px;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+}
+.menu-3:before {
+  margin-top: -6px;
+}
+.menu-3:after {
+  margin-top: 4px;
+}
+
+.menu-3-active {
+  border-radius: 40px;
+  background-color: rgba(4, 72, 139, 1) !important;
+}
+.menu-3-active:before, .menu-3-active:after {
+  background-color: #e3e3e3;
+  margin-left: -15px !important;
+  margin-top: -2px !important;
+}
+.menu-3-active:before {
+  transform: rotate(45deg) !important;
+}
+.menu-3-active:after {
+  transform: rotate(-45deg) !important;
+}
+
 
 //ALWAYS END
 @import "media"
