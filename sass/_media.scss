@@ -1,0 +1,174 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.partners ul li {
+		margin: 0 21px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.stasistika,
+	.bottom_navigation,
+	.top_news_list {
+		display: none;
+	}
+
+	.partners ul li {
+		margin: 0 5px;
+	}
+
+	.logo img {
+		width: 50px;
+	}
+
+	.logo p {
+		font-size: 12px;
+	}
+
+	.main_header_info a {
+		font-size: 20px;
+	}
+
+	.main_header_info p {
+		font-size: 12px;
+	}
+
+	.left_content table li {
+		font-size: 15px;
+		height: 65px;
+		font-family: "RobotoRegular", sans-serif;
+		font-weight: normal;
+		position: relative;
+	}
+
+	.left_content table .money_table button {
+		font-size: 12px;
+		margin-right: 5px;
+		position: absolute;
+		top: 40%;
+		right: 0;
+	}
+
+	.left_content table img {
+	width: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+
+	.footer_navigation {
+		width: 32%;
+	}
+
+	.footer_navigation a {
+		font-size: 16px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.logo {
+		width: 50%;
+	}
+
+	.partners_container,
+	.bottom_header,
+	.right_block,
+	.stasistika,
+	.rezervy,
+	.allert,
+	.main_header_info {
+		display: none;
+	}
+
+	.partners ul {
+		margin-top: 20px;
+	}
+
+	.partners_container {
+		height: 70px;
+	}
+
+	.nav_button {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	.top_header {
+		margin-bottom: 80px;
+	}
+
+	.bottom_bg {
+		bottom: 0;
+	}
+
+	.full_versia{
+		display: block !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
